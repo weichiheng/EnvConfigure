@@ -54,7 +54,7 @@ The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0.
     pip install -r requirements.txt
     ```  
     6.Compile deformable convolutional 
-    ```
+    ```  
     cd src/lib/models/networks
     ```  
     ```
@@ -70,11 +70,19 @@ The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0.
     ./make.sh
     ```  
     7.[Optional, only required if you are using extremenet or multi-scale testing] Compile NMS if your want to use multi-scale testing or test ExtremeNet.
+    ```  
+    cd ..
     ```
+    ```  
     cd ..
+    ```
+    ```  
     cd ..
-    cd ..
+    ```
+    ```  
     cd external/
+    ```
+    ```  
     make
     ```   
     Congratulations! The environment configure has finished.
