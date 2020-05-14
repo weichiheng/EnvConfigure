@@ -37,7 +37,7 @@ cd DCNv2
 ./make.sh
 </code></pre>
 <h3>7.Compile NMS if your want to use multi-scale testing or test ExtremeNet.  </h3>
-<p>[Optional, only required if you are using extremenet or multi-scale testing] </p>
+<p>[**Optional**, only required if you are using extremenet or multi-scale testing] </p>
 <pre><code>cd ..
 cd ..
 cd ..
