@@ -1,4 +1,4 @@
-The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0. After install Anaconda:  
+The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0. After installing Anaconda:  
     1.create a new conda environment.  
     ```  
     conda create --name CenterNet python=3.6  
