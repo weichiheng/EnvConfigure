@@ -3,9 +3,6 @@ Configure  the environments
 
 tree                                                                                                                                       
 
-```
-kkk
-```
 .                                                                                                                                                       
 ├── Networks                                                                                                                                          
 │   └── CenterNet_pytorch1.4.0.md                                                                                                                   
