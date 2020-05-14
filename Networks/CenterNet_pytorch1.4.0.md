@@ -20,6 +20,8 @@ The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0.
     3.Clone the Centernet project  
     ```
     cd /path/to/clone/CenterNet  
+    ```  
+    ```
     git clone https://github.com/xingyizhou/CenterNet  
     ```  
     4.Install COCOAPI  
