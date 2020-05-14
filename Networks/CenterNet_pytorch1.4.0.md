@@ -1,9 +1,13 @@
 The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0. After install Anaconda:
     
     1.create a new conda environment.
-    # conda create --name CenterNet python=3.6
+    '''
+    conda create --name CenterNet python=3.6
+    '''
     And activate the environment.
-    # conda activate CenterNet
+    '''
+    conda activate CenterNet
+    '''
     
     2.Install pytorch1.4.0
     # conda install pytorch=1.4 torchvision cudatoolkit=10.1 -c pytorch
