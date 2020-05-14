@@ -53,7 +53,7 @@ The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0.
     ```
     pip install -r requirements.txt
     ```  
-    6.Compile deformable convolutional 
+    6.Compile deformable convolutional  
     ```  
     cd src/lib/models/networks
     ```  
