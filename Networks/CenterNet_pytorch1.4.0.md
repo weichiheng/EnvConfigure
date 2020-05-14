@@ -1,37 +1,37 @@
-The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0. After install Anaconda: 
-    1.create a new conda environment.
+The code was tested on Ubuntu 18.04, with Anaconda Python3.6 and Pytorch v1.4.0. After install Anaconda:  
+    1.create a new conda environment.  
     ```
-    conda create --name CenterNet python=3.6
+    conda create --name CenterNet python=3.6  
     ```
-    And activate the environment.
+    And activate the environment.  
     ```
-    conda activate CenterNet
+    conda activate CenterNet  
     ```
-    2.Install pytorch1.4.0
+    2.Install pytorch1.4.0  
     ```
-    conda install pytorch=1.4 torchvision cudatoolkit=10.1 -c pytorch
+    conda install pytorch=1.4 torchvision cudatoolkit=10.1 -c pytorch  
     ```
-    If HTTP error, retry.
-    Then disable cudnn batch normalization.
+    If HTTP error, retry.  
+    Then disable cudnn batch normalization.  
     ```
-    gedit ~/anaconda3/envs/CenterNet/lib/python3.6/site-packages/torch/nn/functional.py
+    gedit ~/anaconda3/envs/CenterNet/lib/python3.6/site-packages/torch/nn/functional.py  
     ```
-    change the "torch.backends.cudnn.enabled" with "False" in line 1670.
-    3.Clone the Centernet project
+    change the "torch.backends.cudnn.enabled" with "False" in line 1670.  
+    3.Clone the Centernet project  
     ```
-    cd /path/to/clone/CenterNet
-    git clone https://github.com/xingyizhou/CenterNet
+    cd /path/to/clone/CenterNet  
+    git clone https://github.com/xingyizhou/CenterNet  
     ```
-    4.Install COCOAPI
+    4.Install COCOAPI  
     ```
-    cd CenterNet
-    git clone https://github.com/cocodataset/cocoapi.git
-    cd cocoapi/PythonAPI/
-    pip install Cython
-    make
-    python setup.py install --user
+    cd CenterNet  
+    git clone https://github.com/cocodataset/cocoapi.git  
+    cd cocoapi/PythonAPI/  
+    pip install Cython  
+    make  
+    python setup.py install --user  
     ```
-    5.Install the requirements
+    5.Install the requirements  
     ```
     cd ..
     cd ..
