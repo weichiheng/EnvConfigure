@@ -14,7 +14,7 @@ using nvidia-smi check.
 cd /path/to/cuda.run/dir
 sudo sh cuda_10.2.89_xxxxxx.run
 4.Add environment variables
-sudo getdit ~/.bashrc
+getdit ~/.bashrc
 export CUDA_HOME=/usr/local/cuda
 export PATH=$PATH:$CUDA_HOME/bin
 export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
@@ -76,12 +76,27 @@ cd ..
 cd pyton
 sudo python
 import caffe
-sudo gedit ~/.bashrc
+gedit ~/.bashrc
 export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH
 source ~/.bashrc
 
-
-
-
-
+10.Install tensorRT 7.0
+Download tensorRT 7.0 for ubuntu18.04 cuda10.2 from nvidia website.
+conda create -n tensorRT python=3.7
+conda activate tensorRT
+pip install 'pycuda>=2019.1.1'
+ubzip your tar.gz to your home dir.Now you have 'TensorRT-7.0.0.11' in your home dir.
+gedit ~/.bashrc
+export LD_LIBRARY_PATH=/home/wch/TensorRT-7.0.0.11/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+pip install tensorflow-gpu==1.14.0
+pip install torch==1.3.0 torchvision==0.4.1
+cd /home/wch/TensorRT-7.0.0.11/python
+pip install tensorrt-7.0.0.11-cp37-none-linux_x86_64.whl --user
+cd /home/wch/TensorRT-7.0.0.11/uff
+pip install uff-0.6.5-py2.py3-none-any.whl --user
+cd /home/wch/TensorRT-7.0.0.11/graphsurgeon
+pip install graphsurgeon-0.4.1-py2.py3-none-any.whl --user
+python
+import tensorrt
+import uff
 
