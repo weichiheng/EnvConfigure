@@ -39,7 +39,7 @@ sudo make
 ./deviceQuery
 ```
 
-If Result = PASS, CUDA has been installed.
+If Result = PASS, CUDA has been installed.  
 5.Install cuDNN
 
 ```
@@ -96,7 +96,7 @@ sudo apt-get install python-skimage
 sudo apt-get install python-protobuf
 ```
 
-If /sbin/ldconfig.real: /usr/local/cuda-10.2/targets/x86_64-linux/lib/libcudnn.so.7 is not a symbolic link
+If /sbin/ldconfig.real: /usr/local/cuda-10.2/targets/x86_64-linux/lib/libcudnn.so.7 is not a symbolic link  
 `sudo ln -sf /usr/local/cuda-10.2/targets/x86_64-linux/lib/libcudnn.so.7.6.5 /usr/local/cuda-10.2/targets/x86_64-linux/lib/libcudnn.so.7`
 
 ```
