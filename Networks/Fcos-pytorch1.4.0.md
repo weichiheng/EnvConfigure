@@ -23,5 +23,9 @@ python setup.py build develop --no-deps
 ```
 
 ### 3.onnx
+conda install scikit-image
+pip install opencv-python
+pip install future
+pip install onnx
 
 Finished!
