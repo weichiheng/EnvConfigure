@@ -1,5 +1,5 @@
-ubuntu18.04 with caffe，pytorch, tensorrt 7.0, onnx(latest).
-1.Install the ubuntu18.04.(Close the secure boot)
+ubuntu18.04 with caffe，pytorch, tensorrt 7.0, onnx(latest).  
+1.Install the ubuntu18.04.(Close the secure boot)  
 2.Install the nvidia driver.
 
 ```
@@ -13,7 +13,7 @@ reboot
 ```
 
 If no error is reported, the nvidia driver has been installed
-using `nvidia-smi` check.
+using `nvidia-smi` check.  
 3.Install CUDA 10.2
 
 ```
