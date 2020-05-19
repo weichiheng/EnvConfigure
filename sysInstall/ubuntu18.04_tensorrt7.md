@@ -51,7 +51,7 @@ sudo chmod a+r /usr/local/cuda/include/cudnn.h
 sudo chmod a+r /usr/local/cuda/lib64/libcudnn*
 ```
 
-use `cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2` to check the version of cuDNN.
+use `cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2` to check the version of cuDNN.  
 6.Install cmake
 
 ```
