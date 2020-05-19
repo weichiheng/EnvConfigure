@@ -1,6 +1,12 @@
-1.Clone the code from github.
+### 1.Clone the code from github.
+
+```
 git clone https://github.com/tianzhi0549/FCOS.git
-2.Install
+```
+
+### 2.Install
+
+```
 conda create --name FCOS python=3.7
 conda activate FCOS
 conda install ipython
@@ -14,6 +20,8 @@ python setup.py build_ext install --user
 cd ..
 cd ..
 python setup.py build develop --no-deps
-3.onnx
+```
+
+### 3.onnx
 
 Finished!
