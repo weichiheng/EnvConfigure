@@ -1,5 +1,10 @@
 ubuntu18.04 with caffe，pytorch, tensorrt 7.0, onnx(latest).  
 1.Install the ubuntu18.04.(Close the secure boot)  
+```
+sudo apt-get install ntpdate  
+sudo ntpdate time.windows.com  
+sudo hwclock --localtime --systohc  
+```
 2.Install the nvidia driver.
 
 ```
