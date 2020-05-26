@@ -83,7 +83,7 @@ unzip opencv-xxx.zip to your home dir.
 cd opencv-xxx
 mkdir build
 cd build
-sudo cmake ..
+sudo cmake .. -D BUILD_TIFF=ON  
 sudo make -j64
 sudo make install
 ```
