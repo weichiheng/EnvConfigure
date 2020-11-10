@@ -29,11 +29,17 @@ sudo sh cuda_10.2.89_xxxxxx.run
 4.Add environment variables
 
 ```
-getdit ~/.bashrc
-export CUDA_HOME=/usr/local/cuda
-export PATH=$PATH:$CUDA_HOME/bin
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+gedit ~/.bashrc
++export CUDA_HOME=/usr/local/cuda
++export PATH=$PATH:$CUDA_HOME/bin
++export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 source ~/.bashrc
+sudo gedit /etc/profile
++export PATH=/usr/local/cuda/bin:$PATH
++export  LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64$LD_LIBRARY_PATH
+sudo gedit /etc/ld.so.conf.d/cuda.conf
++/usr/local/cuda/lib64
+sudo ldconfig
 ```
 
 Test the install of CUDA
@@ -116,7 +122,7 @@ cd pyton
 sudo python
 import caffe
 gedit ~/.bashrc
-export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH
++export PYTHONPATH=/path/to/caffe/python:$PYTHONPATH
 source ~/.bashrc
 ```
 
@@ -129,7 +135,7 @@ conda activate tensorRT
 pip install 'pycuda>=2019.1.1'
 ubzip your tar.gz to your home dir.Now you have 'TensorRT-7.0.0.11' in your home dir.
 gedit ~/.bashrc
-export LD_LIBRARY_PATH=/home/wch/TensorRT-7.0.0.11/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
++export LD_LIBRARY_PATH=/home/wch/TensorRT-7.0.0.11/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 pip install tensorflow-gpu==1.14.0
 pip install torch==1.3.0 torchvision==0.4.1
 cd /home/wch/TensorRT-7.0.0.11/python
