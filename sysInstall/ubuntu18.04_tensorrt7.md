@@ -34,12 +34,6 @@ gedit ~/.bashrc
 +export PATH=$PATH:$CUDA_HOME/bin
 +export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 source ~/.bashrc
-sudo gedit /etc/profile
-+export PATH=/usr/local/cuda/bin:$PATH
-+export  LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64$LD_LIBRARY_PATH
-sudo gedit /etc/ld.so.conf.d/cuda.conf
-+/usr/local/cuda/lib64
-sudo ldconfig
 ```
 
 Test the install of CUDA
