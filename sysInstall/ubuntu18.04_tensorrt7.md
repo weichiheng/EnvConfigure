@@ -80,6 +80,7 @@ Download the latest OpenCV source in OpenCV website.
 unzip opencv-xxx.zip to your home dir.
 
 ```
+sudo apt-get install libgtk2.0-dev pkg-config  
 cd opencv-xxx
 mkdir build
 cd build
